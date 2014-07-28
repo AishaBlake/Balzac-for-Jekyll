@@ -4,8 +4,8 @@
 
 <section class="article">
 
-  <div class="overlay"></div>
-  <div class="featured-image" style="background-image: url({{ site.url }}/images/{{ page.image.feature }})"></div>
+<!--   <div class="overlay"></div> -->
+<img  class="featured-image" src="{{ site.url }}/images/{{ page.image.feature }}">
 {% else %}
 
 {% include head-dark.html %}
@@ -25,6 +25,21 @@
 
         {{ content }}
 
+<div id="mc_embed_signup">
+        <form action="http://wordit.us4.list-manage.com/subscribe/post?u=3bc400c69874a5f5dce5bfbe2&amp;id=0d270018a3" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+          <h2>Newsletter</h2>
+        <div class="mc-field-group">
+          <label for="mce-EMAIL">Email Address </label>
+          <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+        </div>
+          <div id="mce-responses" class="clear">
+            <div class="response" id="mce-error-response" style="display:none"></div>
+            <div class="response" id="mce-success-response" style="display:none"></div>
+          </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;"><input type="text" name="b_3bc400c69874a5f5dce5bfbe2_0d270018a3" tabindex="-1" value=""></div>
+            <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+        </form>
+      </div>
       <a class="share" href="https://twitter.com/intent/tweet?text=&quot;{{ page.title }}&quot;%20{{ site.url }}{{ page.url }}%20via%20&#64;{{ site.owner.twitter }}" data-dnt="true">Share</a>
       <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
